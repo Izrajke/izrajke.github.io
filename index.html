@@ -7,16 +7,19 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-    <script src="js/bootstrap.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C700%2C300%7CHind%3A300&#038;subset=latin&#038;ver=35254d0b0bb8eaff8cb518bb29773486" rel="stylesheet">
+
+    <script src="js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="src/fullpage.css" />
     <script src="vendors/easings.min.js"></script>
     <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="src/fullpage.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/12325be884.js" crossorigin="anonymous"></script>
 </head>
 
 <style>
@@ -34,6 +37,10 @@
         line-height: 22.4px;
         font-weight: 400;
         text-decoration: none!important;
+    }
+    .font-text {
+        font-family: Poppins;
+        font-weight: 400;
     }
     nav a:after {
         background-color: #ffffff;
@@ -61,57 +68,183 @@
         margin: 0;
         padding: 0;
     }
+    .language {
+        position: absolute;
+        left: 20px;
+        top: 14px;
+        z-index: 99;
+        opacity: 1;
+    }
+    .dropdown-menu {
+        background-color: rgba(0, 0, 255, 0) !important;
+    }
+    .dropdown-item:hover {
+        background-color: rgba(0, 0, 255, 0) !important;
+    }
+    .btn-main {
+        color: #dc3545!important;
+    }
+    .btn-main:hover {
+        color: #ffffff !important;
+    }
+
+    .scroll-down {
+        opacity: 1;
+        -webkit-transition: all .5s ease-in 3s;
+        transition: all .5s ease-in 3s;
+    }
+
+    .scroll-down {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -16px;
+        display: block;
+        width: 32px;
+        height: 32px;
+        border: 2px solid #FFF;
+        background-size: 14px auto;
+        border-radius: 50%;
+        z-index: 2;
+        -webkit-animation: bounce 2s infinite 2s;
+        animation: bounce 2s infinite 2s;
+        -webkit-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+    }
+
+    .scroll-down:before {
+        position: absolute;
+        top: calc(50% - 8px);
+        left: calc(50% - 6px);
+        transform: rotate(-45deg);
+        display: block;
+        width: 12px;
+        height: 12px;
+        content: "";
+        border: 2px solid white;
+        border-width: 0px 0 2px 2px;
+    }
+
+    @keyframes bounce {
+        0%,
+        100%,
+        20%,
+        50%,
+        80% {
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+        60% {
+            -webkit-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+        }
+    }
 
 </style>
 
 <body>
 
+<div class="language">
+    <div class="dropdown">
+        <a class="p-2 dropdown-toggle font-text" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            English
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item font-text" href="#">Русский</a>
+        </div>
+    </div>
+</div>
+
 <div class="container fixed-top d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 box-shadow">
-    <a class="my-0 mr-md-auto">
+    <a href="index.html" class="my-0 mr-md-auto">
         <img class="img-fluid" src="image/logo.png">
     </a>
     <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2" href="#">Language</a>
-        <a class="p-2" href="#">Archive</a>
-        <a class="p-2" href="#">Patreon</a>
-        <a class="p-2" href="#">Shop</a>
-        <a class="p-2" href="#">About</a>
-        <a class="p-2" href="#">Sign in</a>
+        <a class="p-2 main" href="episode.html">Go to the first episode</a>
+        <a class="p-2 main" href="#">Archive</a>
+        <a class="p-2 main" href="#">Patreon</a>
+        <a class="p-2 main" href="#">Shop</a>
+        <a class="p-2 main" href="#">About</a>
+        <a class="p-2" href="#">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a class="p-2" href="#">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="p-2" href="#">
+            <i class="fab fa-discord"></i>
+        </a>
     </nav>
-    <div class="my-2 my-md-0 mr-md-3">
-        <a class="p-2" href="#">Instagram</a>
-        <a class="p-2" href="#">Twitter</a>
-        <a class="p-2" href="#">Discord</a>
-    </div>
 </div>
 
 <div id="fullpage">
     <div class="section " id="section0" style="background-image: url('image/ww33.jpg');">
-        <h1>Navigation dots</h1>
+        <div class="container intro">
+            <h3 class="font-text" style="color: #dc3545 !important;">Published at 8/24/20</h3>
+            <a href="episode.html" class="btn btn-outline-danger btn-lg font-text btn-main">
+                Go to episode
+                <i class="fas fa-angle-double-right"></i>
+            </a>
+        </div>
+
+        <a href="#" class="scroll-down"></a>
     </div>
 
     <div class="section" id="section1" style="background-image: url('image/ww44.jpg');">
-
+        <div class="container intro">
+            <h3 class="font-text" style="color: #dc3545 !important;">Published at 7/24/20</h3>
+            <a href="episode.html" class="btn btn-outline-danger btn-lg font-text btn-main">
+                Go to episode
+                <i class="fas fa-angle-double-right"></i>
+            </a>
+        </div>
     </div>
 
     <div class="section" id="section2" style="background-image: url('image/ww55.jpg');">
-        <div class="intro">
-            <h1>Enjoy it</h1>
+        <div class="container intro">
+            <h3 class="font-text" style="color: #dc3545 !important;">Published at 6/24/20</h3>
+            <a href="episode.html" class="btn btn-outline-danger btn-lg font-text btn-main">
+                Go to episode
+                <i class="fas fa-angle-double-right"></i>
+            </a>
         </div>
     </div>
 
     <div class="section" id="section4" style="background-image: url('image/ww66.jpg');">
-
+        <div class="container intro">
+            <h3 class="font-text" style="color: #dc3545 !important;">Published at 5/24/20</h3>
+            <a href="episode.html" class="btn btn-outline-danger btn-lg font-text btn-main">
+                Go to episode
+                <i class="fas fa-angle-double-right"></i>
+            </a>
+        </div>
     </div>
 </div>
 
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
         anchors: ['firstPage', 'secondPage', '3rdPage'],
-        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['First page', 'Second page', 'Third and last page']
+    });
+
+    if (document.querySelector('.scroll-down')){
+        document.querySelector('.scroll-down').addEventListener('click', function(e){
+            e.preventDefault();
+            fullpage_api.moveTo(2);
+        });
+    }
+
+    $(function() {
+        $('.scroll-down').click (function() {
+            $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+            return false;
+        });
     });
 </script>
 

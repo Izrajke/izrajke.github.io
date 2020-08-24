@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63f2663e-ead5-43e1-93d6-4f286501ce09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/episode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/1-FULL-RUSSIAN.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +14,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,9 +31,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -37,10 +54,34 @@
       <updated>1598217651279</updated>
       <workItem from="1598217652326" duration="258000" />
       <workItem from="1598217918551" duration="4000" />
+      <workItem from="1598217954182" duration="1495000" />
+      <workItem from="1598261571699" duration="5067000" />
     </task>
+    <task id="LOCAL-00001" summary="rename index.html">
+      <created>1598217987064</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598217987064</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rename index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename index.html" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="484" y="42" width="1075" height="919" key="CommitChangelistDialog2" timestamp="1598217986559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="484" y="42" width="1075" height="919" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598217986559" />
+    <state x="451" y="207" key="Vcs.Push.Dialog.v2" timestamp="1598217988700">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="451" y="207" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1598217988700" />
   </component>
 </project>

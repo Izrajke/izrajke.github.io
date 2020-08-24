@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Episode</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C700%2C300%7CHind%3A300&#038;subset=latin&#038;ver=35254d0b0bb8eaff8cb518bb29773486" rel="stylesheet">
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="src/fullpage.css" />
+    <script src="vendors/easings.min.js"></script>
+    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="src/fullpage.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/12325be884.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+    body {
+        background-color: #0a0a0a;
+    }
+    a {
+        display: inline-block;
+        cursor: pointer;
+        position:relative;
+        color: #ffffff !important;
+        font-family: Poppins;
+        font-size: 16px;
+        line-height: 22.4px;
+        font-weight: 400;
+        text-decoration: none!important;
+    }
+    .font-text {
+        font-family: Poppins;
+        font-weight: 400;
+    }
+    nav a:after {
+        background-color: #ffffff;
+        display: block;
+        content: "";
+        height: 2px;
+        width: 0;
+        left:50%;
+        position:absolute;
+        -webkit-transition: width .3s ease-in-out;
+        -moz--transition: width .3s ease-in-out;
+        transition: width .3s ease-in-out;
+        -webkit-transform:translateX(-50%);
+        -moz-transform:translateX(-50%);
+        transform:translateX(-50%);
+    }
+    nav a:hover:after,
+    nav a:focus:after {
+        width: 100%;
+    }
+    h1 {
+        font-size: 5em;
+        font-family: arial,helvetica;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .language {
+        position: absolute;
+        left: 20px;
+        top: 14px;
+        z-index: 99;
+        opacity: 1;
+    }
+    .dropdown-menu {
+        background-color: rgba(0, 0, 255, 0) !important;
+    }
+    .dropdown-item:hover {
+        background-color: rgba(0, 0, 255, 0) !important;
+    }
+    .btn-main {
+        color: #dc3545!important;
+    }
+    .btn-main:hover {
+        color: #ffffff !important;
+    }
+
+</style>
+
+<body>
+
+<div class="language">
+    <div class="dropdown">
+        <a class="p-2 dropdown-toggle font-text" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            English
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item font-text" href="#">Русский</a>
+        </div>
+    </div>
+</div>
+
+<div class="container fixed-top d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 box-shadow">
+    <a href="index.html" class="my-0 mr-md-auto">
+        <img class="img-fluid" src="image/logo.png">
+    </a>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 main" href="#">Archive</a>
+        <a class="p-2 main" href="#">Patreon</a>
+        <a class="p-2 main" href="#">Shop</a>
+        <a class="p-2 main" href="#">About</a>
+        <a class="p-2" href="#">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a class="p-2" href="#">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="p-2" href="#">
+            <i class="fab fa-discord"></i>
+        </a>
+    </nav>
+</div>
+
+<div class="container">
+    <img class="img-fluid" src="image/1-FULL-RUSSIAN.jpg">
+</div>
+
+</body>
+</html>
